@@ -26,4 +26,4 @@ tmux send-keys -t tig "cd ~/tig/tig-monorepo && . ~/tig/.env" C-m
 
 # Define the selected algorithms and run the benchmarker inside the tmux session
 tmux send-keys -t tig "SELECTED_ALGORITHMS='{\"satisfiability\":\"sat_allocd\",\"vehicle_routing\":\"clarke_wright_super\",\"knapsack\":\"knapmaxxing\",\"vector_search\":\"optimax_gpu\"}'" C-m
-tmux send-keys -t tig "./target/release/tig-benchmarker \$ACCOUNT \$API \$SELECTED_ALGORITHMS --workers \$WORKERS --duration 30000" C-m
+tmux send-keys -t tig "./target/release/tig-benchmarker \$ACCOUNT \$API \$SELECTED_ALGORITHMS --workers \$WORKERS --duration 15000" C-m
